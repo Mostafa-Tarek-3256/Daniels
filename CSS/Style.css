@@ -1,0 +1,318 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 0 20px #7c7c7c3d;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+ul li {
+    margin-left: 20px;
+}
+@media (max-width: 900px) {
+  #navbarSupportedContent {
+    display: flex;
+    flex-direction: row;
+    top: 170px;
+    background-color: #eee;
+  }
+  #navbarSupportedContent li{
+    background-color: white;
+    padding: 10px;
+  }
+}
+.container2 {
+    width: 89%;
+}
+.header00 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(../Image/bg.jpg);
+}
+.list-header {
+   width: 15%;
+}
+.header00 p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+}
+.header00 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 65px;
+}
+.header00 .container h1::after{
+    font-weight: lighter;
+    content:"" ;
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes header-animation{
+    0% {content: "|";}
+    5% {content: "D|";}
+    10% {content: "De|";}
+    15% {content: "Dev|";}
+    20% {content: "Deve|";}
+    25% {content: "Devel|";}
+    30% {content: "Develo|";}
+    35% {content: "Develop|";}
+    40% {content: "Develope|";}
+    45% {content: "Developer|";}
+    50% {content: "Develope|";}
+    55% {content: "Develop|";}
+    60% {content: "Develo|";}
+    65% {content: "Devel|";}
+    70% {content: "Deve|";}
+    75% {content: "Dev|";}
+    80% {content: "De|";}
+    88% {content: "D|";}
+    100% {content: "|";}
+}
+.ancr{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+  @media (min-width: 1200px) {
+    .list-header {
+      width: 25%;
+    }
+}
+  @media (max-width: 1200px) {
+    .list-header {
+      width: 60%;
+    }
+  }
+.progress{
+    background-color: transparent;
+}
+/* .about-left{
+    position: relative;
+} */
+.about-left img{
+    width: 75%;
+    /* position: absolute;
+    right: 0; */
+}
+.progress{
+    height: 25px;
+    background-color: rgb(202, 202, 202);
+    box-shadow: inset 0 0 5px #7c7c7c;
+}
+.progress-bar p{
+    margin: 0; 
+}
+.btn{
+    font-size: small;
+    border:solid 2px black;
+    width: 20%;
+}
+.btn1{
+    background-color: black;
+    color: white;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+}
+.btn2{
+    background-color: white;
+    color: black;
+}
+.btn2:hover {
+    background-color: black;
+    color: white;
+}
+.about-left2{
+    position: relative;
+    z-index: 55;
+}
+.about-left{
+    position: relative;
+}
+.img-dot{
+    background-image: url(../Image/dots.png);
+    width: 75%;
+    height: 400px;
+    position: absolute;
+    left: -15px;
+    bottom: -25px;
+    
+}
+
+.serv1 {
+    position: relative;
+    z-index: 555;
+}
+.dot{
+    height: 40px;
+    background-image: url(../Image/dots.png);
+    z-index: 1;
+    position: relative;
+    bottom: 35;
+}
+.width{
+    box-shadow: 0 0 15px #eee;
+}
+
+
+.services .container {
+    width: 60%;
+}
+.icon-Services{
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+background-color: #eee;
+transition: 1s;
+}
+.icon-Services:hover{
+    background-color: black;
+    color: white;
+}
+.image{
+    /* flex: 1 1 0%; */
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+.portfolio .container {
+    width: 60%;
+}
+.portfolio .container img {
+    width: 100%;
+}
+.rect-hov{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20;
+    right: 20;
+    top: 7;
+    bottom: 7;
+    opacity:0 ;
+    transition: 1s;
+}
+.port-icon{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.rect-hov:hover{
+    opacity:0.9 ;
+}
+
+.image-test img{
+    width: 100%;
+    border-radius: 50%;
+}
+.image-test{
+    width: 5%;
+}
+.carousel-indicators button{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+.card img{
+    width: 100%;
+}
+.hover{
+    position: relative;
+}
+.card{
+    overflow: hidden;
+}
+.hover img{
+    -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.image-hover{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 5;
+    right: 5;
+    top: 5;
+    bottom: 5;
+    opacity:0 ;
+    transition: 2s;
+    z-index: 30;
+}
+.image-hover:hover{
+    opacity: 0.9;
+    transform: rotatey(360deg);
+}
+.hover img:hover{
+    -webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.icons-team{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+.icons-team:hover{
+    background-color: white;
+    i{
+        color: black;
+    }
+}
+.four i{
+    padding: 10px;
+font-size: 30px;
+}
+.four h2{
+    font-weight: 900;
+}
+.icon-us{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: 1s;
+}
+.icon-us:hover{
+    background-color: black;
+    color: white;
+}
+.contact input{
+    width: 45%;
+    height: 40px;
+    background-color: #f4f4f4;
+    border: transparent;
+}
+.contact textarea{
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    border: transparent;
+}
+.contact .container{
+    position: relative;
+}
+.contact .container .btn{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 10%;
+    position: absolute;
+    left: 0;
+}
+.contact .container .btn:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+}
+
+
